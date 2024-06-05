@@ -1,7 +1,3 @@
-<link rel="stylesheet" type="text/css" href="static/style.css">
-
----
-
 <h1 style="text-align: center;">Hi there 👋, I'm Mohamed Elmedany</h1>
 <h3 style="text-align: center;">Senior Software Engineer | Java Enthusiast</h3>
 
@@ -76,9 +72,9 @@ Includes but not limited to:
 <div style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap;">
   <div style="position: relative; margin: 10px; text-align: center;">
     <img src="static/img/1716313051028.png" alt="The Big Book of Generative AI" width="250"/>
-    <div style="position: absolute; top: 10px; right: 10px; background-color: rgba(0, 0, 0, 0.7); color: white; padding: 5px; border-radius: 5px; display: flex; align-items: center;">
-      <div class="spinner" style="margin-right: 5px;"></div> Currently Reading
-    </div>
+  <div style="position: absolute; top: 10px; right: 10px; background-color: rgba(0, 0, 0, 0.7); color: white; padding: 5px; border-radius: 5px; display: flex; align-items: center;">
+    <div style="border: 3px solid rgba(255, 255, 255, 0.3); border-radius: 50%; border-top: 3px solid #ffffff; width: 20px; height: 20px; animation: spin 1s linear infinite; margin-right: 5px;"></div> Currently Reading
+  </div>
   </div>
   <div style="margin: 10px;">
     <img src="static/img/39793332.jpg" alt="Designing Event-Driven Systems" width="250"/>
