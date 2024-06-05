@@ -14,6 +14,8 @@
 }
 </style>
 
+---
+
 <h1 style="text-align: center;">Hi there 👋, I'm Mohamed Elmedany</h1>
 <h3 style="text-align: center;">Senior Software Engineer | Java Enthusiast</h3>
 
