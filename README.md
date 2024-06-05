@@ -26,7 +26,7 @@ I'm a very experienced Software Engineer with over 10 years of experience in the
 
 ### 🛠️ My Stack
 
-Includes but not limited to:
+Includes, but is not limited to, the following:
 
 ![Java](https://img.shields.io/badge/-Java-007396?style=flat-square&logo=java)
 ![Kotlin](https://img.shields.io/badge/-Kotlin-0095D5?style=flat-square&logo=kotlin)
@@ -69,25 +69,44 @@ Includes but not limited to:
 
 ### 📚 Recently Read
 
-<div style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap;">
-  <div style="position: relative; margin: 10px; text-align: center;">
-    <img src="static/img/1716313051028.png" alt="The Big Book of Generative AI" width="250"/>
-  <div style="position: absolute; top: 10px; right: 10px; background-color: rgba(0, 0, 0, 0.7); color: white; padding: 5px; border-radius: 5px; display: flex; align-items: center;">
-    <div style="border: 3px solid rgba(255, 255, 255, 0.3); border-radius: 50%; border-top: 3px solid #ffffff; width: 20px; height: 20px; animation: spin 1s linear infinite; margin-right: 5px;"></div> Currently Reading
-  </div>
-  </div>
-  <div style="margin: 10px;">
-    <img src="static/img/39793332.jpg" alt="Designing Event-Driven Systems" width="250"/>
-  </div>
-  <div style="margin: 10px;">
-    <img src="static/img/615FvRR9.jpg" alt="Software Architecture in Practice" width="250"/>
-  </div>
-  <div style="margin: 10px;">
-    <img src="static/img/7771200.jpg" alt="Keep Sharp: Build a Better Brain" width="250"/>
-  </div>
-  <div style="margin: 10px;">
-    <img src="static/img/7811200.jpg" alt="Thinking, Fast and Slow" width="250"/>
-  </div>
-</div>
+<table style="width:100%; border-collapse: collapse; border: 0;">
+  <tr>
+    <td style="vertical-align: top; border: 0;">
+      <div style="position: relative; margin: 10px; text-align: center;">
+        <img src="static/img/1716313051028.png" alt="The Big Book of Generative AI" width="250"/>
+        <div style="position: absolute; top: 10px; right: 10px; background-color: rgba(0, 0, 0, 0.7); color: white; padding: 5px; border-radius: 5px; display: flex; align-items: center;">
+          <div style="border: 3px solid rgba(255, 255, 255, 0.3); border-radius: 50%; border-top: 3px solid #ffffff; width: 20px; height: 20px; animation: spin 1s linear infinite; margin-right: 5px;"></div> Currently Reading
+        </div>
+      </div>
+    </td>
+    <td style="vertical-align: top; border: 0;">
+      <div style="margin: 10px;">
+        <img src="static/img/39793332.jpg" alt="Designing Event-Driven Systems" width="250"/>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td style="vertical-align: top; border: 0;">
+      <div style="margin: 10px;">
+        <img src="static/img/615FvRR9.jpg" alt="Software Architecture in Practice" width="250"/>
+      </div>
+    </td>
+    <td style="vertical-align: top; border: 0;">
+      <div style="margin: 10px;">
+        <img src="static/img/7771200.jpg" alt="Keep Sharp: Build a Better Brain" width="250"/>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td style="vertical-align: top; border: 0;">
+      <div style="margin: 10px;">
+        <img src="static/img/7811200.jpg" alt="Thinking, Fast and Slow" width="250"/>
+      </div>
+    </td>
+    <td style="border: 0;"></td>
+  </tr>
+</table>
+
+
 
 
