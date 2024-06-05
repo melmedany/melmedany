@@ -68,46 +68,11 @@ Includes, but is not limited to, the following:
 ---
 
 ### 📚 Recently Read
-
-<table style="width: 100%; border-collapse: collapse; border: 0; border-spacing: 0;">
-  <tr style="border: 0;">
-    <td style="vertical-align: top; border: 0; padding: 0;">
-      <div style="position: relative; margin: 10px; text-align: center;">
-        <img src="static/img/1716313051028.png" alt="The Big Book of Generative AI" width="250"/>
-        <div style="position: absolute; top: 10px; right: 10px; background-color: rgba(0, 0, 0, 0.7); color: white; padding: 5px; border-radius: 5px; display: flex; align-items: center;">
-          <img src="static/img/reading.gif" alt="Currently Reading" width="20" height="20" style="margin-right: 5px;"/> Currently Reading
-        </div>
-      </div>
-    </td>
-    <td style="vertical-align: top; border: 0; padding: 0;">
-      <div style="margin: 10px;">
-        <img src="static/img/39793332.jpg" alt="Designing Event-Driven Systems" width="250"/>
-      </div>
-    </td>
-  </tr>
-  <tr style="border: 0;">
-    <td style="vertical-align: top; border: 0; padding: 0;">
-      <div style="margin: 10px;">
-        <img src="static/img/615FvRR9.jpg" alt="Software Architecture in Practice" width="250"/>
-      </div>
-    </td>
-    <td style="vertical-align: top; border: 0; padding: 0;">
-      <div style="margin: 10px;">
-        <img src="static/img/7771200.jpg" alt="Keep Sharp: Build a Better Brain" width="250"/>
-      </div>
-    </td>
-  </tr>
-  <tr style="border: 0;">
-    <td style="vertical-align: top; border: 0; padding: 0;">
-      <div style="margin: 10px;">
-        <img src="static/img/7811200.jpg" alt="Thinking, Fast and Slow" width="250"/>
-      </div>
-    </td>
-    <td style="border: 0; padding: 0;"></td>
-  </tr>
-</table>
-
-
-
-
-
+<p>
+    <img src="static/img/1716313051028.png" alt="The Big Book of Generative AI" width="250"/>
+    <img src="static/img/reading.gif" alt="Currently Reading" width="20" height="20" style="margin-right: 5px;"/> Currently Reading
+    <img src="static/img/39793332.jpg" alt="Designing Event-Driven Systems" width="250"/>
+    <img src="static/img/615FvRR9.jpg" alt="Software Architecture in Practice" width="250"/>
+    <img src="static/img/7771200.jpg" alt="Keep Sharp: Build a Better Brain" width="250"/>
+    <img src="static/img/7811200.jpg" alt="Thinking, Fast and Slow" width="250"/>
+</p>
