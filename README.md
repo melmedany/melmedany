@@ -1,18 +1,4 @@
-<style>
-.spinner {
-  border: 3px solid rgba(255, 255, 255, 0.3);
-  border-radius: 50%;
-  border-top: 3px solid #ffffff;
-  width: 20px;
-  height: 20px;
-  animation: spin 1s linear infinite;
-}
-
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-</style>
+<link rel="stylesheet" type="text/css" href="static/style.css">
 
 ---
 
