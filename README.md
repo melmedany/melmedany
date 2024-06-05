@@ -68,16 +68,14 @@ Includes, but is not limited to, the following:
 ---
 
 ### <img src="static/img/reading.gif" alt="Currently Reading" width="20" height="20" style="margin-right: 5px;"/> Currently Reading
-<img src="static/img/1716313051028.png" alt="The Big Book of Generative AI" width="250"/>
+![The Big Book of Generative AI](static/img/250/1716313051028.png)
 
 
 ---
 
 ### 📚 Recently Read
-<p>
-    <img src="static/img/39793332.jpg" alt="Designing Event-Driven Systems" width="250"/>
-    <img src="static/img/615FvRR9.jpg" alt="Software Architecture in Practice" width="250"/>
-    <img src="static/img/7771200.jpg" alt="Keep Sharp: Build a Better Brain" width="250"/>
-    <img src="static/img/7811200.jpg" alt="Thinking, Fast and Slow" width="250"/>
-</p>
+![Designing Event-Driven Systems](static/img/250/39793332.jpg)
+![Software Architecture in Practice](static/img/250/615FvRR9.jpg)
+![Keep Sharp: Build a Better Brain](static/img/250/7771200.jpg)
+![Thinking, Fast and Slow](static/img/250/7811200.jpg)
 
