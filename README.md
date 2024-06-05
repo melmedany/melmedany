@@ -69,10 +69,16 @@ Includes, but is not limited to, the following:
 
 ### 📚 Recently Read
 <p>
-    <img src="static/img/1716313051028.png" alt="The Big Book of Generative AI" width="250"/>
-    <img src="static/img/reading.gif" alt="Currently Reading" width="20" height="20" style="margin-right: 5px;"/> Currently Reading
+    <span style="position: relative; display: inline-block;">
+        <img src="static/img/1716313051028.png" alt="The Big Book of Generative AI" width="250"/>
+        <span style="position: absolute; top: 0; right: 0; background-color: rgba(0, 0, 0, 0.7); color: white; padding: 2px; display: flex; align-items: center;">
+            <img src="static/img/reading.gif" alt="Currently Reading" width="20" height="20" style="margin-right: 5px;"/>
+            Currently Reading
+        </span>
+    </span>
     <img src="static/img/39793332.jpg" alt="Designing Event-Driven Systems" width="250"/>
     <img src="static/img/615FvRR9.jpg" alt="Software Architecture in Practice" width="250"/>
     <img src="static/img/7771200.jpg" alt="Keep Sharp: Build a Better Brain" width="250"/>
     <img src="static/img/7811200.jpg" alt="Thinking, Fast and Slow" width="250"/>
 </p>
+
