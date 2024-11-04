@@ -49,33 +49,18 @@ Includes, but is not limited to, the following:
 ![Airflow](https://img.shields.io/badge/-Airflow-017CEE?style=flat-square&logo=apache-airflow)
 ![Scrum](https://img.shields.io/badge/-Scrum-6DB33F?style=flat-square&logo=scrum)
 
-[//]: # (---)
-
-[//]: # ()
-[//]: # (### 📜 Certifications)
-
-[//]: # ()
-[//]: # (- Certified Scrum Master &#40;CSM&#41;)
-
-[//]: # (- Oracle Certified Professional, Java SE 11 Developer)
-
-[//]: # (- Google Cloud Professional Data Engineer)
-
-[//]: # (- Docker Certified Associate &#40;DCA&#41;)
-
-[//]: # (- Kubernetes Certified Application Developer &#40;CKAD&#41;)
-
 ---
 
 ### <img src="static/img/reading.gif" alt="Currently Reading" width="20" height="20" style="margin-right: 5px;"/> Currently Reading
-![The Big Book of Generative AI](static/img/250/1716313051028.png)
+![Refactoring: Improving the Design of Existing Code](static/img/20241104.jpg)
 
 
 ---
 
 ### 📚 Recently Read
-![Designing Event-Driven Systems](static/img/250/39793332.jpg)
-![Software Architecture in Practice](static/img/250/615FvRR9.jpg)
-![Keep Sharp: Build a Better Brain](static/img/250/7771200.jpg)
-![Thinking, Fast and Slow](static/img/250/7811200.jpg)
+![The Big Book of Generative AI](static/img/1716313051028.png)
+![Designing Event-Driven Systems](static/img/39793332.jpg)
+![Software Architecture in Practice](static/img/615FvRR9.jpg)
+![Keep Sharp: Build a Better Brain](static/img/7771200.jpg)
+![Thinking, Fast and Slow](static/img/7811200.jpg)
 
