@@ -32,25 +32,25 @@ At the moment, beside expanding more on software architecture practices, I'm lea
 
 Includes, but is not limited to, the following:
 
+![Software Architecture](https://img.shields.io/badge/Software%20Architecture-8A2BE2)
 ![Java](https://img.shields.io/badge/-Java-007396?style=flat-square&logo=java)
 ![Kotlin](https://img.shields.io/badge/-Kotlin-0095D5?style=flat-square&logo=kotlin)
 ![Spring](https://img.shields.io/badge/-Spring-6DB33F?style=flat-square&logo=spring)
 ![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker)
-![Kubernetes](https://img.shields.io/badge/-Kubernetes-326CE5?style=flat-square&logo=kubernetes)
-![Terraform](https://img.shields.io/badge/-Terraform-623CE4?style=flat-square&logo=terraform)
 ![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-336791?style=flat-square&logo=postgresql)
 ![GitLab](https://img.shields.io/badge/-GitLab-FC6D26?style=flat-square&logo=gitlab)
 ![CI/CD](https://img.shields.io/badge/-CI%2FCD-00ADD8?style=flat-square&logo=continuous-integration)
 ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python)
-![GCP](https://img.shields.io/badge/-GCP-4285F4?style=flat-square&logo=google-cloud)
 ![JUnit](https://img.shields.io/badge/-JUnit-25A162?style=flat-square&logo=junit5)
 ![Groovy](https://img.shields.io/badge/-Groovy-4298B8?style=flat-square&logo=apache-groovy)
 ![Cucumber](https://img.shields.io/badge/-Cucumber-23D96C?style=flat-square&logo=cucumber)
 ![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript)
-![Bash](https://img.shields.io/badge/-Bash-4EAA25?style=flat-square&logo=gnu-bash)
 ![Gradle](https://img.shields.io/badge/-Gradle-02303A?style=flat-square&logo=gradle)
 ![Maven](https://img.shields.io/badge/-Maven-C71A36?style=flat-square&logo=apache-maven)
-![Airflow](https://img.shields.io/badge/-Airflow-017CEE?style=flat-square&logo=apache-airflow)
+![Bash](https://img.shields.io/badge/-Bash-4EAA25?style=flat-square&logo=gnu-bash)
+![GCP](https://img.shields.io/badge/-GCP-4285F4?style=flat-square&logo=google-cloud)
+![Kubernetes](https://img.shields.io/badge/-Kubernetes-326CE5?style=flat-square&logo=kubernetes)
+![Terraform](https://img.shields.io/badge/-Terraform-623CE4?style=flat-square&logo=terraform)
 ![Scrum](https://img.shields.io/badge/-Scrum-6DB33F?style=flat-square&logo=scrum)
 
 ---
