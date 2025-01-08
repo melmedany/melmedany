@@ -3,16 +3,16 @@
 
 <p style="text-align: center;">
   <a href="https://www.linkedin.com/in/melmedany/" target="_blank">
-    <img src="https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=linkedin" alt="LinkedIn"/>
+    <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
   </a>
   <a href="https://dev.to/melmedany" target="_blank">
-    <img src="https://img.shields.io/badge/-dev.to-0A0A0A?style=flat-square&logo=dev.to" alt="dev.to"/>
+    <img src="https://img.shields.io/badge/dev.to-0A0A0A?style=for-the-badge&logo=dev.to&logoColor=white" alt="dev.to"/>
   </a>
   <a href="https://stackoverflow.com/users/7881130" target="_blank">
-    <img src="https://img.shields.io/badge/-Stack%20Overflow-FE7A16?style=flat-square&logo=stack-overflow" alt="Stack Overflow"/>
+    <img src="https://img.shields.io/badge/Stack%20Overflow-FE7A16?style=for-the-badge&logo=stack-overflow&logoColor=white" alt="Stack Overflow"/>
   </a>
   <a href="mailto:mo.elmedany@gmail.com" target="_blank">
-    <img src="https://img.shields.io/badge/-Email-D14836?style=flat-square&logo=gmail&logoColor=white" alt="Email"/>
+    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
   </a>
 </p>
 
@@ -32,26 +32,24 @@ At the moment, beside expanding more on software architecture practices, I'm lea
 
 Includes, but is not limited to, the following:
 
-![Software Architecture](https://img.shields.io/badge/Software%20Architecture-8A2BE2)
-![Java](https://img.shields.io/badge/-Java-007396?style=flat-square&logo=java)
-![Kotlin](https://img.shields.io/badge/-Kotlin-0095D5?style=flat-square&logo=kotlin)
-![Spring](https://img.shields.io/badge/-Spring-6DB33F?style=flat-square&logo=spring)
-![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker)
-![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-336791?style=flat-square&logo=postgresql)
-![GitLab](https://img.shields.io/badge/-GitLab-FC6D26?style=flat-square&logo=gitlab)
-![CI/CD](https://img.shields.io/badge/-CI%2FCD-00ADD8?style=flat-square&logo=continuous-integration)
-![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python)
-![JUnit](https://img.shields.io/badge/-JUnit-25A162?style=flat-square&logo=junit5)
-![Groovy](https://img.shields.io/badge/-Groovy-4298B8?style=flat-square&logo=apache-groovy)
-![Cucumber](https://img.shields.io/badge/-Cucumber-23D96C?style=flat-square&logo=cucumber)
-![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript)
-![Gradle](https://img.shields.io/badge/-Gradle-02303A?style=flat-square&logo=gradle)
-![Maven](https://img.shields.io/badge/-Maven-C71A36?style=flat-square&logo=apache-maven)
-![Bash](https://img.shields.io/badge/-Bash-4EAA25?style=flat-square&logo=gnu-bash)
-![GCP](https://img.shields.io/badge/-GCP-4285F4?style=flat-square&logo=google-cloud)
-![Kubernetes](https://img.shields.io/badge/-Kubernetes-326CE5?style=flat-square&logo=kubernetes)
-![Terraform](https://img.shields.io/badge/-Terraform-623CE4?style=flat-square&logo=terraform)
-![Scrum](https://img.shields.io/badge/-Scrum-6DB33F?style=flat-square&logo=scrum)
+![Java](https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java)
+![Kotlin](https://img.shields.io/badge/Kotlin-0095D5?style=for-the-badge&logo=kotlin)
+![Spring](https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white)
+![GitLab](https://img.shields.io/badge/GitLab-FC6D26?style=for-the-badge&logo=gitlab&logoColor=white)
+![CI/CD](https://img.shields.io/badge/CI%2FCD-00ADD8?style=for-the-badge&logo=continuous-integration)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![JUnit](https://img.shields.io/badge/JUnit-25A162?style=for-the-badge&logo=junit5&logoColor=white)
+![Groovy](https://img.shields.io/badge/Groovy-4298B8?style=for-the-badge&logo=apache-groovy&logoColor=white)
+![Cucumber](https://img.shields.io/badge/Cucumber-23D96C?style=for-the-badge&logo=cucumber&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Gradle](https://img.shields.io/badge/Gradle-02303A?style=for-the-badge&logo=gradle&logoColor=white)
+![Maven](https://img.shields.io/badge/Maven-C71A36?style=for-the-badge&logo=apache-maven&logoColor=white)
+![Bash](https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white)
+![GCP](https://img.shields.io/badge/GCP-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
+![Terraform](https://img.shields.io/badge/Terraform-623CE4?style=for-the-badge&logo=terraform&logoColor=white)
 
 ---
 
