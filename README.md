@@ -1,5 +1,5 @@
 <h1 style="text-align: center;">Hi there 👋, I'm Mohamed Elmedany</h1>
-<h3 style="text-align: center;">Senior Software Engineer | Certified Architect | Certified Scrum Master</h3>
+<h3 style="text-align: center;">Senior Software Engineer | Software Architect | Chapter Lead | Java & Kotlin | Distributed Systems | DDD | AI-Assisted Development</h3>
 
 <p style="text-align: center;">
   <a href="https://www.linkedin.com/in/melmedany/" target="_blank">
@@ -7,9 +7,6 @@
   </a>
   <a href="https://dev.to/melmedany" target="_blank">
     <img src="https://img.shields.io/badge/dev.to-0A0A0A?style=for-the-badge&logo=devdotto&logoColor=white" alt="dev.to"/>
-  </a>
-  <a href="https://stackoverflow.com/users/7881130" target="_blank">
-    <img src="https://img.shields.io/badge/Stack%20Overflow-FE7A16?style=for-the-badge&logo=stack-overflow&logoColor=white" alt="Stack Overflow"/>
   </a>
   <a href="mailto:mo.elmedany@gmail.com" target="_blank">
     <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
@@ -20,11 +17,11 @@
 
 ### 👨‍💻 About Me
 
-For me, Software Engineering isn't just a job, it's a lifestyle that I absolutely love. I thrive on the ever-evolving challenges and exciting opportunities in the tech world, and I approach each project with dedication and genuine enthusiasm. My commitment to excellence, paired with a proactive mindset, keeps me on the lookout for cutting-edge skills to stay ahead in this dynamic field.
+Software engineer focused on building scalable, domain-driven systems and evolving them safely. I move comfortably between architecture and hands-on development, improving code, teams, and delivery.
 
-I genuinely enjoy the unpredictability in software engineering, always ready to dive into innovative solutions and make a meaningful impact. In this fast-paced environment, I find inspiration in pushing the boundaries and staying ahead of the curve.
+AI-assisted development is part of my daily workflow to accelerate design, testing, and refactoring.
 
-At the moment, beside expanding more on software architecture practices, I'm learning more about data and machine learning.
+Pragmatic, curious, and focused on long-term maintainability.
 
 ---
 
