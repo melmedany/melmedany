@@ -1,5 +1,5 @@
 <h1 style="text-align: center;">Hi there 👋, I'm Mohamed Elmedany</h1>
-<h3 style="text-align: center;">Senior Software Engineer | Software Architect | Chapter Lead | Java & Kotlin | Distributed Systems | DDD | AI-Assisted Development</h3>
+<h3 style="text-align: center;">Senior Software Engineer | Software Architect | Chapter Lead | Java & Kotlin | Distributed Systems | DDD | AI-Assisted AI-Augmented</h3>
 
 <p style="text-align: center;">
   <a href="https://www.linkedin.com/in/melmedany/" target="_blank">
