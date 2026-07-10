@@ -48,9 +48,8 @@ jobs:
           path: ./build
 
       - name: Deploy to Cloudflare Pages
-        uses: cloudflare/pages-action@v1.5.0
+        uses: cloudflare/wrangler-action@v4.0.0
         with:
-          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          projectName: ${{ vars.CLOUDFLARE_PROJECT_NAME }}
-          directory: ./build
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy ./build --project-name=${{ vars.CLOUDFLARE_PROJECT_NAME }} --branch=production
