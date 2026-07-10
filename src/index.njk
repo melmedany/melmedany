@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="title" content="{{ spa.basics.name }} - {{ spa.basics.label }}"/>
+  <meta name="description" content="{{ spa.basics.narrative | truncate(75, true, '') | trim }}">
+  <meta property="og:type" content="profile">
+  <meta property="og:url" content="https://mohamedelmedany.dev"/>
+  <meta property="og:title" content="{{ spa.basics.name }} - {{ spa.basics.label }}">
+  <meta property="og:description" content="{{ spa.basics.narrative | truncate(75, true, '') | trim }}">
+  <meta property="og:image" content="/assets/img/og-card.png"/>
+  <meta property="og:image:alt" content="{{ spa.basics.narrative | truncate(75, true, '') | trim }}"/>
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+  <meta property="og:site_name" content="mohamedelmedany.dev"/>
+  <meta property="og:locale" content="en_US"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:url" content="https://mohamedelmedany.dev"/>
+  <meta name="twitter:title" content="{{ spa.basics.name }} - {{ spa.basics.label }}"/>
+  <meta name="twitter:description" content="{{ spa.basics.narrative | truncate(75, true, '') | trim }}"/>
+  <title>{{ spa.basics.name }} - {{ spa.basics.label }}</title>
+  <link href="https://mohamedelmedany.dev"  rel="canonical"/>
+  <link href="/assets/img/apple-touch-icon.png"  rel="apple-touch-icon" sizes="180x180"/>
+  <link href="/assets/img/favicon-32x32.png" rel="icon" type="image/png" sizes="32x32"/>
+  <link href="/assets/img/favicon-16x16.png" rel="icon" type="image/png" sizes="16x16"/>
+  <link href="/assets/fontsource/inter.css" rel="stylesheet"/>
+  <link href="/assets/fontsource/jetbrains-mono.css" rel="stylesheet"/>
+  <link href="/assets/font-awesome/all.min.css" rel="stylesheet"/>
+  <link href="/assets/swiper/swiper-bundle.min.css" rel="stylesheet"/>
+  <link href="/assets/css/style.css" rel="stylesheet"/>
+</head>
+<body>
+  <nav id="top-nav">
+    <div class="nav-container">
+      <a href="#top" class="nav-logo">{{ spa.basics.name | lower | replace(" ", "") }}<span>.dev</span></a>
+      <div class="nav-right">
+        <ul id="navLinks" class="nav-links">
+          <li><a href="#philosophy">Philosophy</a></li>
+          <li><a href="#case-studies">Work</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#timeline">Timeline</a></li>
+          <li><a href="#story">Story</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button id="themeToggle" class="btn-theme" aria-label="Toggle theme">
+          <i id="themeIcon" class="fas fa-moon"></i>
+        </button>
+        <button id="navToggle" class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navLinks">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero" id="top">
+    <div class="hero-grid">
+      <div class="hero-content fade-in">
+        <div class="hero-label">{{ spa.basics.label }}</div>
+        <h1>{{ spa.basics.heroHeading | safe }}</h1>
+        <p class="hero-subtitle">{{ spa.basics.narrative }}</p>
+      </div>
+      <div class="hero-visual fade-in">
+        <div class="photo-ring"></div>
+        <div class="photo-ring photo-ring-2"></div>
+        <img src="/assets/img/hero.png" alt="Portrait of {{ spa.basics.name }}" class="hero-photo">
+      </div>
+    </div>
+  </section>
+
+  <section id="philosophy">
+    <div class="section-header fade-in">
+      <div class="section-label">{{ spa.basics.profileHeading }}</div>
+      <h2 class="section-title">{{ spa.basics.philosophyHeading }}</h2>
+    </div>
+    {% for p in spa.basics.philosophyNarrative %}
+    <p class="philosophy-text fade-in">{{ p | safe }}</p>
+    {% endfor %}
+  </section>
+
+  <section id="case-studies">
+    <div class="section-header">
+      <div class="section-label">Selected Work</div>
+      <h2 class="section-title">Systems I've architected and shipped.</h2>
+      <p class="section-desc">Not every project — just the ones where architecture decisions made the difference.</p>
+    </div>
+
+    <div class="slider-wrapper">
+      <div class="swiper case-swiper">
+        <div class="swiper-wrapper">
+          {% for cs in spa.basics.caseStudies %}
+          <div class="swiper-slide">
+            <div class="case-card">
+              <div class="case-header">
+                <div class="case-title-row">
+                  <div class="case-title">{{ cs.title }}</div>
+                  <div class="case-meta">
+                    <span class="case-company">{{ cs.company }}</span>
+                  </div>
+                </div>
+                {% if cs.subtitle %}
+                  <div class="case-subtitle">{{ cs.subtitle }}</div>
+                {% endif %}
+              </div>
+
+              <div class="case-body">
+                {% if cs.problem %}
+                  <div class="case-section">
+                    <div class="case-section-label">The Problem</div>
+                    {% for para in cs.problem %}
+                      <p>{{ para | safe }}</p>
+                    {% endfor %}
+                  </div>
+                {% endif %}
+
+                {% if cs.approach %}
+                  <div class="case-section">
+                    <div class="case-section-label">The Approach</div>
+                    {% for para in cs.approach %}
+                      <p>{{ para | safe }}</p>
+                    {% endfor %}
+                  </div>
+                {% endif %}
+              </div>
+
+              {% if cs.impact %}
+                <ul class="case-impact-statements">
+                  {% for stmt in cs.impact %}
+                    <li>{{ stmt }}</li>
+                  {% endfor %}
+                </ul>
+              {% endif %}
+
+              {% if cs.diagram %}
+                <div class="case-diagram swiper-no-swiping">
+                  <div class="case-diagram-container"
+                       data-d2="{{ cs.diagram | escape | replace('"', '&quot;') }}"
+                       data-title="{{ cs.title | titleToDiagram }}">
+                  </div>
+                </div>
+              {% endif %}
+
+              {% if cs.technologies %}
+                <div class="case-tech">
+                  {% for tech in cs.technologies %}
+                    <span class="tech-tag">{{ tech }}</span>
+                  {% endfor %}
+                </div>
+              {% endif %}
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <div class="slider-nav case-prev" aria-label="Previous case study"><i class="fa-solid fa-angle-left"></i></div>
+      <div class="slider-nav case-next" aria-label="Next case study"><i class="fa-solid fa-angle-right"></i></div>
+    </div>
+  </section>
+
+  <section id="blog">
+    <div class="section-header fade-in">
+      <div class="section-label">Blog</div>
+      <h2 class="section-title">I write to clarify my thinking.</h2>
+      <p class="section-desc">These are ideas that have shaped how I build systems.</p>
+    </div>
+    <div class="slider-wrapper">
+      <div class="swiper blog-swiper">
+        <div class="swiper-wrapper">
+          {% for pub in spa.publications %}
+          <div class="swiper-slide">
+            <a href="{{ pub.link }}" target="_blank" rel="noopener" class="article-card">
+              {%- if pub.imageUrl %}
+              <div class="article-image"><img src="{{ pub.imageUrl }}" alt="{{ pub.name }}" loading="lazy"></div>
+              {%- endif %}
+              <div class="article-date">iO Digital Tech Hub — {{ pub.date | truncate(7, true, '') }}</div>
+              <div class="article-title">{{ pub.name }}</div>
+              <div class="article-excerpt">{{ pub.description | truncate(150, true, '...')}}</div>
+              <div class="article-read">Read Article <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg></div>
+            </a>
+          </div>
+          {% endfor %}
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <div class="slider-nav blog-prev" aria-label="Previous article"><i class="fa-solid fa-angle-left"></i></div>
+      <div class="slider-nav blog-next" aria-label="Next article"><i class="fa-solid fa-angle-right"></i></div>
+    </div>
+  </section>
+
+  <section id="timeline">
+    <div class="section-header fade-in">
+      <div class="section-label">Career Timeline</div>
+      <h2 class="section-title">Where I've left marks.</h2>
+    </div>
+    <div class="timeline">
+      {% for job in spa.work %}
+      {% if job.chapterMarker %}
+      <div class="timeline-chapter-marker fade-in">
+        <div class="timeline-marker-dot"></div>
+        <div class="timeline-marker-content">
+          <div class="timeline-marker-label">{{ job.markerLabel }}</div>
+          <div class="timeline-marker-date">{{ job.markerDate }}</div>
+          <div class="timeline-marker-note">{{ job.markerNote }}</div>
+        </div>
+      </div>
+      {% else %}
+      <div class="timeline-item fade-in">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <span class="timeline-role">{{ job.position }}</span>
+            <span class="timeline-date">{{ job.startDate | fmtDate }} — {% if job.endDate %}{{ job.endDate | fmtDate }}{% else %}Present{% endif %}</span>
+          </div>
+          <div class="timeline-company">{{ job.company }}</div>
+          <p class="timeline-desc">{{ job.narrative | safe }}</p>
+        </div>
+      </div>
+      {% endif %}
+      {% endfor %}
+    </div>
+  </section>
+
+  <section id="story">
+    <div class="section-header">
+      <div class="section-label">Story</div>
+      <h2 class="section-title">How I got here.</h2>
+    </div>
+    {% for para in spa.basics.storyNarrative %}
+      <p class="story-narrative fade-in">{{ para | safe }}</p>
+    {% endfor %}
+  </section>
+
+  <section id="contact">
+    <div class="contact-section fade-in">
+      <div class="section-label centered">Contact</div>
+      <h2 class="contact-title">{{ spa.basics.contactTitle }}</h2>
+      <p class="contact-desc">{{ spa.basics.contactDesc }}</p>
+      <div class="contact-links">
+        <a href="mailto:{{ spa.basics.email }}" class="social-link" aria-label="Email">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <span>Email</span>
+        </a>
+        {% for profile in spa.basics.profiles %}
+        <a href="{{ profile.url }}" target="_blank" rel="noopener" class="social-link" aria-label="{{ profile.network }}">
+          {% if profile.network | lower == "linkedin" %}
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          {% elif profile.network | lower == "github" %}
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          {% else %}
+          {{ profile.network }}
+          {% endif %}
+          <span>{{ profile.network }}</span>
+        </a>
+        {% endfor %}
+        <a href="{{ spa.basics.resumeFile }}" download class="social-link social-link-cta" aria-label="Download Resume">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+          <span>For recruiters</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <span class="footer-name">{{ spa.basics.name }} · <span>Updated {{ spa.meta.lastUpdated | fmtDate }}</span></span>
+    <a href="#top" class="footer-top-link" aria-label="Back to top">↑</a>
+  </footer>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "{{ spa.basics.name }}",
+      "jobTitle": "{{ spa.basics.label }}",
+      "url": "https://mohamedelmedany.dev",
+      "sameAs": ["https://linkedin.com/in/melmedany", "https://github.com/melmedany"]
+    }
+  </script>
+  <script src="/assets/svg-pan-zoom/svg-pan-zoom.min.js"></script>
+  <script src="/assets/swiper/swiper-bundle.min.js"></script>
+  <script src="/assets/js/app.js" type="module"></script>
+</body>
+</html>

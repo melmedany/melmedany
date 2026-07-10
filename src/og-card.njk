@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ spa.basics.name }} - {{ spa.basics.label }}</title>
+  <link href="/assets/fontsource/inter.css" rel="stylesheet" >
+  <link href="/assets/fontsource/jetbrains-mono.css" rel="stylesheet" >
+  <link href="/assets/font-awesome/all.min.css" rel="stylesheet">
+  <style>{{ styleCss | safe }}</style>
+</head>
+<body>
+  <section class="hero">
+    <div class="hero-grid">
+      <div class="hero-content">
+        <div class="hero-label">{{ spa.basics.label }}</div>
+        <h1>{{ spa.basics.heroHeading | safe }}</h1>
+        <p class="hero-subtitle">{{ spa.basics.narrative }}</p>
+      </div>
+      <div class="hero-visual">
+        <div class="photo-ring"></div>
+        <div class="photo-ring photo-ring-2"></div>
+        <img src="{{ heroBase64 }}" alt="{{ spa.basics.name }}" class="hero-photo">
+      </div>
+    </div>
+  </section>
+</body>
+</html>

@@ -1,0 +1,25 @@
+{
+  "name": "mohamedelmedany-portfolio",
+  "version": "6.7.5",
+  "lastUpdated": "2026-07-09T01:58:37Z",
+  "private": true,
+  "scripts": {
+    "build": "eleventy && node scripts/generate-diagrams.js && node scripts/generate-pdf.js && node scripts/generate-og-card.js",
+    "build:diagrams": "node scripts/generate-diagrams.js",
+    "build:pdf": "node scripts/generate-pdf.js",
+    "build:og-card": "node scripts/generate-og-card.js",
+    "serve": "eleventy --serve --port=3000"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "puppeteer": "^24.43.1"
+  },
+  "dependencies": {
+    "@fontsource/inter": "^5.2.8",
+    "@fontsource/jetbrains-mono": "^5.2.8",
+    "@fortawesome/fontawesome-free": "^7.3.0",
+    "@terrastruct/d2": "^0.1.33",
+    "svg-pan-zoom": "^3.6.2",
+    "swiper": "^14.0.2"
+  }
+}

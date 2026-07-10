@@ -1,0 +1,304 @@
+{
+  "meta": {
+    "version": "6.7.5",
+    "lastUpdated": "2026-07-09T01:58:37Z"
+  },
+  "basics": {
+    "name": "Mohamed Elmedany",
+    "label": "Senior Software Engineer · Software Architect",
+    "email": "mo.elmedany@gmail.com",
+    "mobile": "+31628945264",
+    "location": {
+      "city": "Almere",
+      "country": "Netherlands"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "url": "https://www.linkedin.com/in/melmedany/"
+      },
+      {
+        "network": "GitHub",
+        "url": "https://github.com/melmedany"
+      }
+    ],
+    "summary": "Senior software engineer with 12+ years building domain-centric distributed systems. I design evolvable architectures where software boundaries match business boundaries and teams can safely evolve the system over time. I've spent enough time in broken codebases to know that clarity matters more than cleverness. I use AI-assisted development daily as part of my workflow, treating it as a runtime concern rather than a shortcut. Certified iSAQB CPSA-F. Hands-on across architecture and delivery with test-first practices as standard.",
+    "skills": {
+      "languages": [
+        "Java",
+        "Kotlin",
+        "Python",
+        "JavaScript",
+        "TypeScript",
+        "Bash"
+      ],
+      "system_design": [
+        "Distributed Systems",
+        "Scalability & High Availability",
+        "Resilience & Fault Tolerance",
+        "Consistency Models"
+      ],
+      "sre": [
+        "SLOs / SLIs",
+        "Observability",
+        "Incident Management",
+        "Automation",
+        "Distributed Tracing"
+      ],
+      "architecture": [
+        "Domain-Driven Design",
+        "Microservices",
+        "Event Driven Architecture",
+        "gRPC",
+        "Websockets",
+        "OpenAPI"
+      ],
+      "cloud": [
+        "GCP",
+        "AWS",
+        "AWS CDK",
+        "Kubernetes"
+      ],
+      "frameworks": [
+        "Spring Boot",
+        "Spring AI",
+        "Spring Security",
+        "Quarkus",
+        "Ktor",
+        "Hibernate",
+        "Axon",
+        "React",
+        "Vue.js"
+      ],
+      "data": [
+        "PostgreSQL",
+        "MySQL",
+        "MongoDB",
+        "Redis"
+      ],
+      "devOps": [
+        "Docker",
+        "Terraform",
+        "Git",
+        "Gitlab CI/CD",
+        "Gradle",
+        "Maven",
+        "Jenkins",
+        "TeamCity"
+      ],
+      "testing": [
+        "JUnit",
+        "Mockito",
+        "JMeter",
+        "TestContainers",
+        "Wiremock",
+        "Kotest"
+      ],
+      "messaging": [
+        "Kafka",
+        "Google Pub/Sub",
+        "RabbitMQ",
+        "ActiveMQ"
+      ],
+      "observability": [
+        "Grafana",
+        "Prometheus",
+        "OpenTelemetry"
+      ]
+    }
+  },
+  "work": [
+    {
+      "company": "iO Digital",
+      "position": "Senior Software Engineer / JVM Chapter Lead",
+      "startDate": "2024-08",
+      "endDate": null,
+      "featured": true,
+      "summary": "Working as a consultant engineer across client engagements while leading the JVM Chapter, a role built to connect engineers across projects, drive technical alignment, and raise the collective bar. I authored technical articles on the iO tech hub and helped define what good engineering looks like inside the company. The consulting model sharpened my ability to onboard fast, earn trust quickly, and deliver in unfamiliar Kotlin and Java codebases.",
+      "highlights": [
+        "Led the JVM Chapter, connecting engineers across campuses and projects around shared Kotlin/Java standards",
+        "Delivered transformational observability, domain redesign and technical excellence work at Kuehne+Nagel",
+        "Authored technical articles on the iO Digital tech hub covering architecture, observability, and AI-assisted development"
+      ],
+      "technologies": [
+        "Java",
+        "Kotlin",
+        "Spring Boot",
+        "OpenTelemetry",
+        "Kubernetes",
+        "GCP"
+      ]
+    },
+    {
+      "company": "Kuehne+Nagel",
+      "position": "Senior Software Engineer (via iO Digital)",
+      "startDate": "2024-08",
+      "endDate": "2026-06",
+      "featured": true,
+      "summary": "Designed and implemented observability architecture using OpenTelemetry, making production behavior visible through business-relevant metrics and KPIs. Led domain model redesign efforts, removing years of technical debt and aligning code with how the business actually works. Brought test-first practices and a habit of quietly raising the bar across the team. Introduced AI-assisted development into the workflow while safeguarding sensitive data and customer information. Work in a DevOps manner, taking ownership of deployments, monitoring, and production stability.",
+      "highlights": [
+        "AI-assisted coding: Accelerated development while maintaining strict data governance for sensitive data",
+        "Observability stack: Designed application-level monitoring with Prometheus and GCP Alert Policies, establishing SLO-based alerting across microservices",
+        "Domain modernization: Led DDD-based model redesign, extracting core logic and establishing bounded contexts from a scattered monorepo while enforcing hexagonal architecture boundaries",
+        "Technical culture: Initiated quality meetup that became the birthplace for cross-team architectural standards adopted platform-wide",
+        "Platform operations: Collaborated with DevOps on GitLab migration, establishing clean repository structure and CI/CD pipelines for multiple services"
+      ],
+      "technologies": [
+        "Kotlin",
+        "GCP",
+        "Kubernetes",
+        "Docker",
+        "PostgreSQL",
+        "Terraform",
+        "OpenTelemetry",
+        "Prometheus",
+        "Axon"
+      ]
+    },
+    {
+      "company": "Bol.",
+      "position": "Senior Software Developer",
+      "startDate": "2018-11",
+      "endDate": "2024-03",
+      "featured": true,
+      "summary": "Deep experience building and maintaining high-availability systems at scale. Worked with event-driven architectures using Google Pub/Sub, containerized workloads on Kubernetes, and CI/CD pipelines through GitLab. Hands-on across backend and supporting interfaces in Kotlin and Java. As part of the Architecture Circle I reviewed service designs across domains and guided teams toward consistent patterns. I shaped onboarding process and set the engineering bar for the team.",
+      "highlights": [
+        "Designed and implemented event-driven architecture using Google Pub/Sub, handling concurrent user chats with low latency at scale",
+        "Migrated legacy monolithic systems to modern, scalable architectures capable of handling peak traffic during sales events without degradation",
+        "Led technical team, establishing code review standards and test-first practices that improved production stability",
+        "Guided engineers through onboarding, reducing time-to-productivity and improving knowledge transfer",
+        "Facilitated cross-domain planning sessions aligning technical roadmaps with bounded context boundaries",
+        "Reviewed service designs across multiple domains as Architecture Circle member, guiding teams toward consistent patterns and reducing cross-team integration failures"
+      ],
+      "technologies": [
+        "Java",
+        "Kotlin",
+        "Spring",
+        "GCP",
+        "Kubernetes",
+        "Google BigQuery",
+        "Google Pub/Sub",
+        "Docker",
+        "Gitlab CI/CD",
+        "PostgreSQL",
+        "Terraform"
+      ]
+    },
+    {
+      "company": "Vodafone Shared Services",
+      "position": "Java Developer",
+      "startDate": "2017-09",
+      "endDate": "2018-10",
+      "summary": "Part of the strategic arm of Vodafone Group. Focused on digitalizing B2B client onboarding and integrating Cortex workflows into existing platforms. Worked closely with cross-functional teams to automate real-time business processes and expose capabilities to enterprise clients.",
+      "highlights": [
+        "Digitalized B2B onboarding and technical support processes, reducing manual intervention for enterprise clients",
+        "Integrated Cortex workflow engine into existing platforms, exposing automation capabilities to B2B customers",
+        "Collaborated with cross-functional team to automate real-time business processes, cutting average ticket resolution time"
+      ],
+      "technologies": [
+        "Java",
+        "JavaScript",
+        "Bash",
+        "Cortex"
+      ]
+    },
+    {
+      "company": "Vodafone",
+      "position": "Senior Java Developer",
+      "startDate": "2016-08",
+      "endDate": "2017-08",
+      "summary": "Worked on Extranet, a high-performance retail platform with four independently communicating modules. Drove modernization efforts including migration from Java 6 to 8, deploying to JBoss, moved the team from SVN to Git, and established test-driven development as standard practice.",
+      "highlights": [
+        "Led platform migration from Java 6 to Java 8, ensuring backward compatibility and better response times",
+        "Migrated to JBoss application server, reducing deployment complexity and simplifying maintainability",
+        "Migrated team from SVN to Git, establishing branching strategy and CI practices that reduced merge conflicts",
+        "Established Test-Driven Development as standard practice, increasing test coverage and improving code quality"
+      ],
+      "technologies": [
+        "Java",
+        "Spring",
+        "Oracle",
+        "Angular",
+        "JBoss"
+      ]
+    },
+    {
+      "company": "Ferrycode",
+      "position": "Software Developer",
+      "startDate": "2014-04",
+      "endDate": "2015-07",
+      "summary": "Early-career work at a startup delivering editorial management tools for news agencies and government systems. Covered the full cycle from requirements gathering to on-site customer training. Built a suite of web-based tools that served news organisations and government agencies across different countries.",
+      "highlights": [
+        "Built and deployed editorial management tools for news agencies, and management systems for government sector",
+        "Conducted on-site customer training and configuration across multiple countries, achieving high client adoption",
+        "Worked full project lifecycle from requirements to production support, establishing foundation for end-to-end ownership that shaped later architectural thinking"
+      ],
+      "technologies": [
+        "Java",
+        "JUnit",
+        "PostgreSQL",
+        "Angular",
+        "Gitlab CI/CD"
+      ]
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certified Professional for Software Architecture (CPSA-F)",
+      "issuer": "iSAQB"
+    },
+    {
+      "name": "AWS Certified Cloud Practitioner",
+      "issuer": "Amazon Web Services (AWS)"
+    },
+    {
+      "name": "Certified ScrumMaster (CSM)",
+      "issuer": "Scrum Alliance"
+    }
+  ],
+  "education": [
+    {
+      "institution": "Modern Academy",
+      "area": "Computer Science",
+      "studyType": "Bachelor",
+      "startDate": "2009-09",
+      "endDate": "2013-09"
+    }
+  ],
+  "languages": [
+    {
+      "language": "Arabic",
+      "fluency": "Native"
+    },
+    {
+      "language": "English",
+      "fluency": "Fluent"
+    },
+    {
+      "language": "Dutch",
+      "fluency": "Beginner"
+    }
+  ],
+  "publications": [
+    {
+      "name": "What AI Secretly Changed About My Engineering",
+      "link": "https://techhub.iodigital.com/articles/what-ai-secretly-changed-about-my-engineering",
+      "date": "2026-07-08"
+    },
+    {
+      "name": "Quantum-Safe Cryptography: How Encryption Evolved and Why It Needs to Evolve Again",
+      "link": "https://techhub.iodigital.com/articles/quantum-safe-cryptography",
+      "date": "2026-04-13"
+    },
+    {
+      "name": "Refactoring Gone Wild: Avoiding code smells and cleaning up the mess",
+      "link": "https://techhub.iodigital.com/articles/refactoring-gone-wild-avoiding-code-smells-and-cleaning-up-the-mess",
+      "date": "2025-04-17"
+    },
+    {
+      "name": "Simple, Modular & Distributed Chat System",
+      "link": "https://techhub.iodigital.com/series/distributed-chat-system",
+      "date": "2024-08-02"
+    }
+  ]
+}

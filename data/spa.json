@@ -1,0 +1,214 @@
+{
+  "meta": {
+    "version": "6.7.5",
+    "lastUpdated": "2026-07-09T01:58:37Z"
+  },
+  "basics": {
+    "name": "Mohamed Elmedany",
+    "label": "Senior Software Engineer & Architect",
+    "narrative": "My work sits at the intersection of architecture and hands-on engineering. I care about domain boundaries, observable systems, and code that teams can safely evolve over time. I enjoy turning complexity into systems that are practical to build and resilient to change.",
+    "philosophyNarrative": [
+      "Good software is mostly about clarity. Clear boundaries, clear intent, clear ownership. I've spent enough time in broken codebases to know the opposite is expensive. When the code doesn't reflect how the business actually works, you patch the gap forever. <span class=\"skill-mention\">Domain-Driven Design</span> isn't methodology theatre to me. It's the most honest answer I've found to the problem of keeping systems understandable as they grow.",
+      "That's not a new idea. But it matters more than most people think, and I've built my approach to architecture around it. <span class=\"skill-mention\">CPSA-F</span> certification confirmed what I already knew from practice, but it also sharpened how I think and talk about it. System boundaries need to match business boundaries. Services need names that the business understands. Code needs to say what it does without requiring a wiki.",
+      "I use AI-assisted development daily. I've introduced tools like <span class=\"skill-mention\">Junie</span> and <span class=\"skill-mention\">GitHub Copilot</span> into teams as part of their everyday workflow, working within whatever organisational rules applied around data handling and tooling governance. In practice that meant <span class=\"skill-mention\">Spring Boot</span> and <span class=\"skill-mention\">Kotlin</span> codebases, using Junie for code generation and review cycles, and <span class=\"skill-mention\">Claude Code</span> for heavier refactoring and exploratory work.",
+      "Twelve years in and I still find the hard problems interesting. Moving between <span class=\"skill-mention\">Java</span> and <span class=\"skill-mention\">Kotlin</span>. Monoliths to bounded contexts. Build systems that teams can safely evolve. Make the implicit explicit. Raise the bar quietly."
+    ],
+    "profileHeading": "Engineering Philosophy",
+    "skillsNarrative": "Java and Kotlin are my native languages. I have built production systems in both for over a decade, mostly on Spring Boot, with domain boundaries as the primary design constraint. I run systems on GCP or AWS under Kubernetes, instrument them with OpenTelemetry, and connect services with the tools that fit the problem. Lately I have been integrating AI tooling into backend workflows using Spring AI and other frameworks, treating AI as a runtime concern rather than a feature layer.",
+    "email": "mo.elmedany@gmail.com",
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "url": "https://www.linkedin.com/in/melmedany/"
+      },
+      {
+        "network": "GitHub",
+        "url": "https://github.com/melmedany"
+      }
+    ],
+    "heroHeading": "I build distributed systems <em>that are meant to last.</em>",
+    "contactTitle": "Let's build something that lasts.",
+    "contactDesc": "If you want to think out loud about distributed systems, domain design, or how AI fits into a real engineering workflow, I am genuinely here for that. I have opinions about bounded contexts, strong feelings about observability, and a possibly unhealthy interest in why monoliths keep winning. If you have an interesting problem or just want to compare notes, reach out.",
+    "resumeFile": "/assets/Mohamed_Elmedany_Senior_Software_Engineer.pdf",
+    "philosophyHeading": "Pragmatic by nature. Quietly raising the bar.",
+    "storyNarrative": [
+      "I got into software engineering because I love building things. The same instinct that made me take apart toys as a kid eventually led to Computer Science and then to a career where I get to design systems from scratch, make hard decisions, and watch them hold up under real load.",
+      "<span class=\"skill-mention\">Java</span> was my first professional language. I started using it during my early college years, it shaped how I think about type safety, verbosity as clarity, and the JVM as a long-term investment. Over time <span class=\"skill-mention\">Kotlin</span> became my second language, not because Java isn't good, but because Kotlin removes friction without hiding the model. I've been building production systems in both for over a decade and they still interest me.",
+      "Starting my career at a startup exposed me to the full cycle. Requirements to customer training. That foundation shaped how I think about ownership and delivery. From there I moved through individual contributor work to focusing on technical impact, from single-team work to cross-domain architecture, from building features to building the conditions that let teams build well.",
+      "Egypt to the Netherlands in 2018 was a turning point. Work scaled differently at Bol.. High-availability systems and event-driven architecture at scale is a different discipline. The consulting model sharpened how I onboard fast, earn trust in unfamiliar codebases, and build connections with teams quickly.",
+      "Language-wise, I'm native Arabic, fluent in English (my working language for the past decade), and learning Dutch since moving to the Netherlands. Most of my writing and thinking happens in English. I write about engineering because writing clarifies thinking.",
+      "Curious about how <span class=\"skill-mention\">AI-assisted development</span> fits into real workflows, not the hype. I believe good architecture is mostly about clarity and honesty. The rest follows."
+    ],
+    "caseStudies": [
+      {
+        "title": "From Blind Spots to Production Resilience",
+        "subtitle": "Application-Level Observability",
+        "company": "Kuehne+Nagel",
+        "impact": [
+          "Application-level metrics and KPIs now tracked across all services",
+          "Production investigations start from evidence instead of assumptions",
+          "Alerts integrated to MS Teams for real-time incident awareness"
+        ],
+        "problem": [
+          "<span class=\"skill-mention\">OpenTelemetry</span> Collector, <span class=\"skill-mention\">Prometheus</span>, and <span class=\"skill-mention\">Jaeger</span> already existed in the infrastructure. But application-level monitoring was missing. The team had infrastructure visibility but no sense of what the system was actually doing at the business logic level.",
+          "Incident response was expensive because it started with guesswork about which service was misbehaving, then digging into traces. No dashboard to see KPIs or health at a glance."
+        ],
+        "approach": [
+          "I worked with the team to instrument services with business-relevant metrics. What does a successful flow look like. Where do things drop off. Which integrations are failing, or taking more time than expected. Visualizing these metrics using dashboards on <span class=\"skill-mention\">GCP</span> and applying the right Alert Policies, integrating critical alerts into MS Teams so incidents surface immediately.",
+          "The focus was making the business visible through numbers. Not just infrastructure metrics, but the actual work the system does."
+        ],
+        "diagram": "direction: right\n\nServices: {\n  shape: rectangle\n}\n\nBusiness Metrics: {\n  shape: rectangle\n}\n\nOTel Collector: {\n  shape: rectangle\n}\n\nPrometheus: {\n  shape: cylinder\n}\n\nJaeger: {\n  shape: cylinder\n}\n\nGCP Dashboards: {\n  shape: rectangle\n}\n\nGCP Alert Policies: {\n  shape: rectangle\n}\n\nMS Teams: {\n  shape: rectangle\n}\n\nServices -> Business Metrics: {\n  label: \"instrumentation\"\n}\n\nBusiness Metrics -> OTel Collector: {\n  label: \"metrics\"\n}\n\nServices -> OTel Collector: {\n  label: \"traces\"\n}\n\nOTel Collector -> Prometheus\nOTel Collector -> Jaeger\n\nPrometheus -> GCP Dashboards\n\nJaeger -> GCP Dashboards: {\n  label: \"investigate\"\n  style.stroke-dash: 4\n}\n\nGCP Dashboards -> GCP Alert Policies\nGCP Alert Policies -> MS Teams",
+        "technologies": ["OpenTelemetry", "Prometheus", "Jaeger", "GCP", "Alert Policies", "Kotlin", "Axon Framework"]
+      },
+      {
+        "title": "Aligning Code with Business Reality",
+        "subtitle": "Domain-Centric Monorepo Redesign",
+        "company": "Kuehne+Nagel",
+        "impact": [
+          "Domain logic extracted and modeled to match current business processes",
+          "Boundaries now enforced through hexagonal architecture",
+          "Engineers can evolve domain without fear of hidden coupling"
+        ],
+        "problem": [
+          "The codebase was a scattered monorepo with multi-module services. Domain logic was spread across modules. No clear boundaries between core domain and supporting concerns. When the business changed how they worked, engineers didn't know which modules to change.",
+          "The code didn't reflect how the business described the work. Every change felt risky because coupling was implicit."
+        ],
+        "approach": [
+          "I co-led the redesign to extract the domain into a <span class=\"skill-mention\">domain-centric</span> model. Identified bounded contexts. Reorganized modules around these boundaries, not technical layers. Applied <span class=\"skill-mention\">hexagonal architecture</span> pattern so the domain stayed pure and communication with the outside world was explicit.",
+          "The work was mostly refactoring and restructuring. Moving code to the right place. Naming things to match how the business talks about the work. Making implicit coupling explicit so it could be managed."
+        ],
+        "diagram": "direction: right\n\nBefore_header: {\n  shape: text\n  label: Before\n  style: {\n    font-size: 24\n    bold: true\n    fill: transparent\n    stroke: transparent\n  }\n}\n\nMonorepo: {shape: rectangle}\nModule_A: {shape: rectangle; label: Module A}\nModule_B: {shape: rectangle; label: Module B}\nModule_C: {shape: rectangle; label: Module C}\n\nMonorepo -> Module_A\nMonorepo -> Module_B\nMonorepo -> Module_C\nModule_A -> Module_B: {\n  label: hidden coupling\n  style: {\n    stroke-dash: 3\n  }\n}\nModule_B -> Module_C: {\n  label: hidden coupling\n  style: {\n    stroke-dash: 3\n  }\n}\n\nAfter_header: {\n  shape: text\n  label: After\n  style: {\n    font-size: 24\n    bold: true\n    fill: transparent\n    stroke: transparent\n  }\n}\n\nDomain_Centric_Monorepo: {shape: rectangle; label: Domain-Centric Monorepo}\nBounded_Context_1: {shape: rectangle; label: Bounded Context 1}\nBounded_Context_2: {shape: rectangle; label: Bounded Context 2}\nExternal_Systems: {shape: rectangle; label: External Systems}\n\nDomain_Centric_Monorepo -> Bounded_Context_1\nDomain_Centric_Monorepo -> Bounded_Context_2\nBounded_Context_1 -> External_Systems: {label: ports & adapters}\nBounded_Context_2 -> External_Systems: {label: ports & adapters}",
+        "technologies": ["Domain-Driven Design", "Hexagonal Architecture", "Kotlin", "Axon Framework", "PostgreSQL"]
+      },
+      {
+        "title": "Scaling Customer Conversations",
+        "subtitle": "Chat Architecture Redesign",
+        "company": "Bol.",
+        "impact": [
+          "Chat flows migrated to proven 3rd party provider without interruption",
+          "New routing and enriching gateway handles all chat traffic with graceful fallbacks",
+          "Adapter pattern separates our logic from 3rd party implementation details"
+        ],
+        "problem": [
+          "Billie, the customer chatbot, was built on an aging in-house platform. Maintaining it was expensive. The content and flows were tightly coupled to the platform.",
+          "We needed to migrate to a proven solution without losing chat history or breaking customer experience."
+        ],
+        "approach": [
+          "We split the work into content and engineering. The content team migrated all chat flows to a 3rd party provider. On the engineering side, I worked with the team to design a new architecture. A <span class=\"skill-mention\">routing and enriching gateway</span> connects the UI to an adapter service. The adapter abstracts away the 3rd party provider details. If we ever switch providers, only the adapter changes. A fallback channel routes conversations to human customer service when the provider is unavailable.",
+          "The pattern was explicit. UI doesn't know about the 3rd party. 3rd party doesn't know about our domain. The gateway and adapter manage the translation."
+        ],
+        "diagram": "direction: right\n\n\"Chat UI\": {shape: rectangle}\n\"Routing & Enriching Gateway\": {shape: rectangle}\n\"Adapter Service\": {shape: rectangle}\n\"3rd Party Provider\": {shape: rectangle}\n\"Human Customer Service\": {shape: rectangle}\n\n\"Chat UI\" -> \"Routing & Enriching Gateway\": {label: HTTP}\n\"Routing & Enriching Gateway\" -> \"Adapter Service\"\n\"Adapter Service\" -> \"3rd Party Provider\": {label: \"API calls\"}\n\"Routing & Enriching Gateway\" -> \"Human Customer Service\": {label: \"fallback: on 3rd party unavailability\"}\n\"3rd Party Provider\" -> \"Adapter Service\": {label: responses}\n\"Adapter Service\" -> \"Routing & Enriching Gateway\": {label: \"enriched responses\"}\n\"Routing & Enriching Gateway\" -> \"Chat UI\": {label: messages}\n",
+        "technologies": ["Kotlin", "Java", "Event-Driven Architecture", "Adapter Pattern", "Kubernetes", "GCP"]
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "iO Digital",
+      "position": "Senior Software Engineer / JVM Chapter Lead",
+      "startDate": "2024-08",
+      "endDate": null,
+      "featured": true,
+      "narrative": "At iO Digital I work as a consultant engineer across client engagements while also serving as JVM Chapter Lead, a role built to connect engineers across projects, drive technical alignment, and raise the collective bar. I authored articles on the iO tech hub and helped define what good engineering looked like inside the company. The consulting model sharpened my ability to onboard fast, earn trust quickly, and deliver in unfamiliar <span class=\"skill-mention\">Kotlin</span> and <span class=\"skill-mention\">Java</span> codebases.",
+      "highlights": [
+        "Led the JVM Chapter, connecting engineers across projects for knowledge sharing and technical alignment",
+        "Delivered client engagements as a consultant, including work at Kuehne+Nagel",
+        "Authored technical articles published on the iO Digital tech hub",
+        "Contributed to raising engineering standards across the JVM community within iO"
+      ],
+      "technologies": [
+        "Java",
+        "Kotlin",
+        "Spring Boot",
+        "OpenTelemetry",
+        "Kubernetes",
+        "GCP"
+      ]
+    },
+    {
+      "company": "Kuehne+Nagel",
+      "position": "Senior Software Engineer (via iO Digital)",
+      "startDate": "2024-08",
+      "endDate": "2026-06",
+      "featured": true,
+      "narrative": "At Kuehne+Nagel I designed and implemented <span class=\"skill-mention\">observability</span> architecture using <span class=\"skill-mention\">OpenTelemetry</span>, establishing metrics, alerting, and dashboards with <span class=\"skill-mention\">Grafana</span> and <span class=\"skill-mention\">Prometheus</span> that improved production resilience. I also led domain model redesign efforts, removing technical debt and aligning code with current business rules. I worked in a DevOps manner, taking ownership of deployments, monitoring, and production stability and I bring test-first practices and a habit of raising engineering quality across the team.",
+      "highlights": [
+        "Introduced AI-assisted coding, accelerating development work while safeguarding sensitive and customer data",
+        "Initiated technical quality meetup where it was the birthplace for multiple decision and architectural improvements",
+        "Introduced and implemented application monitoring, alerting and dashboard setup",
+        "Collaborated closely with DevOps engineer during GitLab migration, ensuring smooth transition and establishing clean separate repositories and pipelines"
+      ],
+      "technologies": [
+        "Kotlin",
+        "GCP",
+        "Kubernetes",
+        "Docker",
+        "PostgreSQL",
+        "Terraform",
+        "Axon"
+      ]
+    },
+    {
+      "company": "Bol.",
+      "position": "Senior Software Developer",
+      "startDate": "2018-11",
+      "endDate": "2024-03",
+      "featured": true,
+      "narrative": "My time at Bol. gave me deep familiarity with high-availability systems operating at scale. Event-driven architectures using <span class=\"skill-mention\">Google Pub/Sub</span>. Containerized workloads on <span class=\"skill-mention\">Kubernetes</span>. CI/CD pipelines through <span class=\"skill-mention\">GitLab</span>. I was hands-on across backend and supporting interfaces in <span class=\"skill-mention\">Kotlin</span> and <span class=\"skill-mention\">Java</span>. As part of the Architecture Circle I reviewed service designs across domains and guided teams toward consistent patterns. I shaped the onboarding process and set the engineering bar for the team.",
+      "highlights": [
+        "Architecture design and implementation using Kotlin/Java",
+        "Backend development with frontend work including configuration interfaces and service management pages",
+        "Migrating legacy systems to modern, scalable architectures",
+        "Leading the technical team and fostering good engineering practices"
+      ],
+      "technologies": [
+        "Java",
+        "Kotlin",
+        "Spring",
+        "GCP",
+        "Kubernetes",
+        "Google Pub/Sub",
+        "Docker",
+        "Gitlab CI/CD",
+        "PostgreSQL",
+        "Terraform"
+      ]
+    },
+    {
+      "chapterMarker": true,
+      "markerLabel": "Moved to the Netherlands",
+      "markerDate": "2018",
+      "markerNote": "Relocated from Cairo to the Netherlands to join bol."
+    }
+  ],
+  "publications": [
+    {
+      "name": "What AI Secretly Changed About My Engineering",
+      "description": "After hundreds of hours of AI-assisted development, I expected to write less code. Instead, I changed how I plan, review, and reason about it.",
+      "link": "https://techhub.iodigital.com/articles/what-ai-secretly-changed-about-my-engineering",
+      "date": "2026-07-08",
+      "imageUrl": "https://techhub.iodigital.com/_next/image?url=/articles/what-ai-secretly-changed-about-my-engineering/banner.png&w=3840&q=75"
+    },
+    {
+      "name": "Quantum-Safe Cryptography: How Encryption Evolved and Why It Needs to Evolve Again",
+      "description": "An attempt to make sense of quantum-safe cryptography: where encryption came from, why quantum computers break the rules, and what Java developers can do about it today.",
+      "link": "https://techhub.iodigital.com/articles/quantum-safe-cryptography",
+      "date": "2026-04-13",
+      "imageUrl": "https://techhub.iodigital.com/_next/image?url=/articles/quantum-safe-cryptography/banner.png&w=3840&q=75"
+    },
+    {
+      "name": "Refactoring Gone Wild: Avoiding code smells and cleaning up the mess",
+      "description": "Identifying and avoiding bad coding practices, and refactoring them into clean, elegant, self-explanatory code.",
+      "link": "https://techhub.iodigital.com/articles/refactoring-gone-wild-avoiding-code-smells-and-cleaning-up-the-mess",
+      "date": "2025-04-17",
+      "imageUrl": "https://techhub.iodigital.com/_next/image?url=/articles/refactoring-gone-wild-avoiding-code-smells-and-cleaning-up-the-mess/banner.png&w=3840&q=75"
+    },
+    {
+      "name": "Simple, Modular & Distributed Chat System",
+      "description": "A deep dive into designing a modular and distributed chat system designed to provide secure, scalable direct messaging solution.",
+      "link": "https://techhub.iodigital.com/series/distributed-chat-system",
+      "date": "2024-08-02",
+      "imageUrl": "https://techhub.iodigital.com/_next/image?url=/articles/distributed-chat-system/banner.png&w=3840&q=75"
+    }
+  ]
+}
