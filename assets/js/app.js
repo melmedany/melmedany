@@ -1,4 +1,4 @@
-import {DiagramLoader} from './diagram-loader.js';
+import { DiagramLoader } from './diagram-loader.js';
 
 class ResumeApp {
     theme = 'dark';
