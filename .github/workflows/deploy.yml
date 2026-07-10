@@ -30,8 +30,9 @@ jobs:
         run: npm run build
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v4
+        uses: actions/upload-artifact@v4
         with:
+          name: build
           path: ./build
 
   deploy:
@@ -44,6 +45,7 @@ jobs:
         with:
           name: build
           path: ./build
+
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/pages-action@v1
         with:

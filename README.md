@@ -52,14 +52,3 @@ Includes, but is not limited to, the following:
 
 ### <img src="static/img/reading.gif" alt="Currently Reading" width="20" height="20" style="margin-right: 5px;"/> Currently Reading
 ![Refactoring: Improving the Design of Existing Code](static/img/20241104.jpg)
-
-
----
-
-### 📚 Recently Read
-![The Big Book of Generative AI](static/img/1716313051028.png)
-![Designing Event-Driven Systems](static/img/39793332.jpg)
-![Software Architecture in Practice](static/img/615FvRR9.jpg)
-![Keep Sharp: Build a Better Brain](static/img/7771200.jpg)
-![Thinking, Fast and Slow](static/img/7811200.jpg)
-
