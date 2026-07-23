@@ -192,6 +192,14 @@ class ResumeApp {
         }
     }
 
+    initAnalytics() {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-6ZDSEQHGEF');
+    }
+
     init() {
         this.initTheme();
         this.initMobileNav();
@@ -199,6 +207,7 @@ class ResumeApp {
         this.initSmoothScroll();
         this.initSwipers();
         this.initDiagrams();
+        this.initAnalytics();
     }
 }
 
