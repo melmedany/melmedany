@@ -277,11 +277,26 @@
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "{{ spa.basics.name }}",
-      "jobTitle": "{{ spa.basics.label }}",
-      "url": "https://mohamedelmedany.dev",
-      "sameAs": ["https://linkedin.com/in/melmedany", "https://github.com/melmedany"]
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://mohamedelmedany.dev",
+          "url": "https://mohamedelmedany.dev",
+          "name": "{{ spa.basics.name }} - {{ spa.basics.label }}",
+          "alternateName": "{{ spa.basics.name }}",
+          "publisher": {
+            "@id": "https://mohamedelmedany.dev"
+          }
+        },
+        {
+          "@type": "Person",
+          "@id": "https://mohamedelmedany.dev",
+          "name": "{{ spa.basics.name }}",
+          "jobTitle": "{{ spa.basics.label }}",
+          "url": "https://mohamedelmedany.dev",
+          "sameAs": ["https://linkedin.com/in/melmedany", "https://github.com/melmedany"]
+        }
+      ]
     }
   </script>
   <script src="/assets/svg-pan-zoom/svg-pan-zoom.min.js"></script>
