@@ -50,13 +50,14 @@
           "alternateName": ["{{ spa.basics.name | safe }} - {{ spa.basics.label | safe }}"],
           "publisher": {
             "@id": "{{ spa.meta.url | safe }}#person"
-          }
+          },
+          "sameAs": ["https://linkedin.com/in/melmedany", "https://github.com/melmedany"]
         },
         {
           "@type": "Person",
           "@id": "{{ spa.meta.url | safe }}#person",
           "name": "{{ spa.basics.name }}",
-          "jobTitle": "{{ spa.basics.label }}",
+          "jobTitle": "{{ spa.basics.label | safe }}",
           "url": "{{ spa.meta.url | safe }}",
           "sameAs": ["https://linkedin.com/in/melmedany", "https://github.com/melmedany"]
         }
