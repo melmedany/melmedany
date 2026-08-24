@@ -6,7 +6,7 @@
   <meta name="title" content="{{ spa.basics.name }}"/>
   <meta name="description" content="{{ spa.basics.narrative | truncate(75, true, '') | trim }}">
   <meta property="og:type" content="profile">
-  <meta property="og:url" content="https://mohamedelmedany.dev"/>
+  <meta property="og:url" content="{{ spa.meta.url | safe }}"/>
   <meta property="og:title" content="{{ spa.basics.name }}">
   <meta property="og:description" content="{{ spa.basics.narrative | truncate(75, true, '') | trim }}">
   <meta property="og:image" content="/assets/img/og-card.png"/>
@@ -16,11 +16,11 @@
   <meta property="og:site_name" content="{{ spa.basics.name }}"/>
   <meta property="og:locale" content="en_US"/>
   <meta name="twitter:card" content="summary_large_image"/>
-  <meta name="twitter:url" content="https://mohamedelmedany.dev"/>
+  <meta name="twitter:url" content="{{ spa.meta.url | safe }}"/>
   <meta name="twitter:title" content="{{ spa.basics.name }}"/>
   <meta name="twitter:description" content="{{ spa.basics.narrative | truncate(75, true, '') | trim }}"/>
   <title>{{ spa.basics.name| safe }} - {{ spa.basics.label | safe }}</title>
-  <link href="https://mohamedelmedany.dev"  rel="canonical"/>
+  <link href="{{ spa.meta.url | safe }}"  rel="canonical"/>
   <link href="/assets/img/apple-touch-icon.png"  rel="apple-touch-icon" sizes="180x180"/>
   <link href="/assets/img/favicon-32x32.png" rel="icon" type="image/png" sizes="32x32"/>
   <link href="/assets/img/favicon-16x16.png" rel="icon" type="image/png" sizes="16x16"/>
@@ -38,6 +38,31 @@
   <!-- End Google Tag Manager -->
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-6ZDSEQHGEF"></script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "{{ spa.meta.url | safe }}#website",
+          "url": "{{ spa.meta.url | safe }}",
+          "name": "{{ spa.basics.name | safe }}",
+          "alternateName": ["{{ spa.basics.name | safe }} - {{ spa.basics.label | safe }}"],
+          "publisher": {
+            "@id": "{{ spa.meta.url | safe }}#person"
+          }
+        },
+        {
+          "@type": "Person",
+          "@id": "{{ spa.meta.url | safe }}#person",
+          "name": "{{ spa.basics.name }}",
+          "jobTitle": "{{ spa.basics.label }}",
+          "url": "{{ spa.meta.url | safe }}",
+          "sameAs": ["https://linkedin.com/in/melmedany", "https://github.com/melmedany"]
+        }
+      ]
+    }
+  </script>
 </head>
 <body>
   <nav id="top-nav">
@@ -274,31 +299,6 @@
     <span class="footer-name">{{ spa.basics.name }} · <span>Updated {{ spa.meta.lastUpdated | fmtDate }}</span></span>
     <a href="#top" class="footer-top-link" aria-label="Back to top">↑</a>
   </footer>
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "WebSite",
-          "@id": "https://mohamedelmedany.dev/#website",
-          "url": "https://mohamedelmedany.dev",
-          "name": "{{ spa.basics.name | safe }}",
-          "alternateName": ["{{ spa.basics.name | safe }} - {{ spa.basics.label | safe }}"],
-          "publisher": {
-            "@id": "https://mohamedelmedany.dev/#person"
-          }
-        },
-        {
-          "@type": "Person",
-          "@id": "https://mohamedelmedany.dev/#person",
-          "name": "{{ spa.basics.name }}",
-          "jobTitle": "{{ spa.basics.label }}",
-          "url": "https://mohamedelmedany.dev",
-          "sameAs": ["https://linkedin.com/in/melmedany", "https://github.com/melmedany"]
-        }
-      ]
-    }
-  </script>
   <script src="/assets/svg-pan-zoom/svg-pan-zoom.min.js"></script>
   <script src="/assets/swiper/swiper-bundle.min.js"></script>
   <script src="/assets/js/app.js" type="module"></script>
