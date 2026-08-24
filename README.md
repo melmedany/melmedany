@@ -2,6 +2,9 @@
 <h3 style="text-align: center;">Senior Software Engineer | Software Architect | Chapter Lead | Java & Kotlin | Distributed Systems | DDD | AI-Augmented Development</h3>
 
 <p style="text-align: center;">
+  <a href="https://mohamedelmedany.dev/" target="_blank">
+    <img src="https://mohamedelmedany.dev/assets/img/favicon-32x32.png" alt="Portfolio"/>
+  </a>
   <a href="https://www.linkedin.com/in/melmedany/" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
   </a>
