@@ -1,7 +1,9 @@
-<h1 style="text-align: center;">Hi there 👋, I'm Mohamed Elmedany</h1>
-<h3 style="text-align: center;">Senior Software Engineer | Software Architect | Java & Kotlin | Distributed Systems | DDD | AI-Augmented Development</h3>
+<h1>Hi there 👋, I'm Mohamed Elmedany</h1>
+<p>Senior Software Engineer & Architect. I build distributed systems that are meant to last. Clear boundaries, observable behaviour, code that teams can safely evolve.</p>
 
-<p style="text-align: center;">
+<p>Check out the full story here <a href="https://mohamedelmedany.dev/#story" target="_blank">mohamedelmedany.dev</a></p>
+
+<p>
   <a href="https://www.linkedin.com/in/melmedany/" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
   </a>
@@ -34,8 +36,7 @@
 **Languages:** Java, Kotlin  
 **Frameworks & Runtime:** Spring Boot, Axon Framework  
 **Data:** PostgreSQL  
-**Infrastructure:** Kubernetes, Docker, GCP, AWS 
-**Observability:** OpenTelemetry, Prometheus, Jaeger, Grafana  
+**Infrastructure:** Kubernetes, Docker, GCP, AWS **Observability:** OpenTelemetry, Prometheus, Jaeger, Grafana  
 **Practices:** DDD, Hexagonal Architecture, TDD, CI/CD
 
 I work with more than this, but these are the ones I know well enough to know their limits.
