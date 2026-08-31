@@ -24,6 +24,7 @@ function durationYrs(start, end) {
 
 function buildATSHtml(data) {
     const b = data.basics || {};
+    const portfolio = (b.profiles || []).find(p => p.network?.toLowerCase() === 'portfolio')?.url || '';
     const github = (b.profiles || []).find(p => p.network?.toLowerCase() === 'github')?.url || '';
     const linkedin = (b.profiles || []).find(p => p.network?.toLowerCase() === 'linkedin')?.url || '';
 
@@ -31,6 +32,7 @@ function buildATSHtml(data) {
         b.email,
         b.mobile,
         b.location && `${b.location.city}, ${b.location.country}`,
+        portfolio && portfolio.replace(/^https?:\/\/(www\.)?/, ''),
         github && github.replace(/^https?:\/\/(www\.)?/, ''),
         linkedin && linkedin.replace(/^https?:\/\/(www\.)?/, ''),
     ].filter(Boolean).join(' · ');
@@ -51,9 +53,35 @@ function buildATSHtml(data) {
         const end = w.current || !w.endDate ? 'Present' : fmtDate(w.endDate);
         const dur = durationYrs(w.startDate, w.endDate);
         const bullets = (w.highlights || []).map(h => `<li>${h}</li>`).join('');
-        const tech = w.technologies?.length
+
+        const hasProjects = (w.projects || []).length > 0;
+        const tech = (!hasProjects && w.technologies?.length)
             ? `<p class="ats-tech"><strong>Technologies:</strong> ${w.technologies.join(', ')}</p>`
             : '';
+
+        // NEW: render nested consultancy projects
+        const projectsHtml = (w.projects || []).map(p => {
+            const pEnd = p.endDate ? fmtDate(p.endDate) : 'Present';
+            const pBullets = (p.highlights || []).map(h => `<li>${h}</li>`).join('');
+            const pTech = p.technologies?.length
+                ? `<p class="ats-tech"><strong>Technologies:</strong> ${p.technologies.join(', ')}</p>`
+                : '';
+            return `
+      <div class="ats-sub-job">
+        <div class="ats-job-header">
+          <strong>${p.position} — ${p.company}</strong>
+          <span class="ats-dates">${fmtDate(p.startDate)} – ${pEnd}</span>
+        </div>
+        ${p.summary ? `<p class="ats-p">${p.summary}</p>` : ''}
+        ${pBullets ? `<ul class="ats-bullets">${pBullets}</ul>` : ''}
+        ${pTech}
+      </div>`;
+        }).join('');
+        const projectsBlock = projectsHtml
+            ? `<div class="ats-sub-jobs-label">${w.projectsLabel || 'Client Projects'}</div>
+           <div class="ats-sub-jobs">${projectsHtml}</div>`
+            : '';
+
         return `
       <div class="ats-job">
         <div class="ats-job-header">
@@ -63,6 +91,7 @@ function buildATSHtml(data) {
         ${w.summary ? `<p class="ats-p">${w.summary}</p>` : ''}
         ${bullets ? `<ul class="ats-bullets">${bullets}</ul>` : ''}
         ${tech}
+        ${projectsBlock}
       </div>`;
     }).join('');
 
@@ -105,6 +134,10 @@ function buildATSHtml(data) {
   .ats-p { color: #4a5568; margin-bottom: 5px; }
   .ats-tech { font-size: 12px; color: #4a5568; margin-top: 4px; }
   .ats-tech strong { color: #1a1a2e; }
+  .ats-sub-jobs-label { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: #718096; margin-top: 8px; }
+  .ats-sub-jobs { margin: 4px 0 4px 14px; padding-left: 12px; border-left: 2px solid #e2e8f0; }
+  .ats-sub-job { margin-top: 8px; page-break-inside: avoid; }
+  .ats-sub-job .ats-job-header strong { font-size: 12.5px; }
   .ats-bullets { padding-left: 18px; margin: 4px 0; }
   .ats-bullets li { list-style: disc; margin-bottom: 3px; color: #4a5568; }
   .ats-bullets a:hover { text-decoration: underline; }

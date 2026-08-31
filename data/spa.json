@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-08-24T12:25:35Z",
+    "lastUpdated": "2026-08-31T18:20:00Z",
     "url": "https://mohamedelmedany.dev/"
   },
   "basics": {
@@ -108,44 +108,28 @@
       "position": "Senior Software Engineer / JVM Chapter Lead",
       "startDate": "2024-08",
       "endDate": null,
-      "featured": true,
-      "narrative": "At iO Digital I work as a consultant engineer across client engagements while also serving as JVM Chapter Lead, a role built to connect engineers across projects, drive technical alignment, and raise the collective bar. I authored articles on the iO tech hub and helped define what good engineering looked like inside the company. The consulting model sharpened my ability to onboard fast, earn trust quickly, and deliver in unfamiliar <span class=\"skill-mention\">Kotlin</span> and <span class=\"skill-mention\">Java</span> codebases.",
+      "narrative": "At iO Digital I work as a consultant engineer across client projects while also serving as JVM Chapter Lead, a role built to connect engineers across projects, drive technical alignment, and raise the collective bar. I authored articles on the iO tech hub and helped define what good engineering looked like inside the company. The consulting model sharpened my ability to onboard fast, earn trust quickly, and deliver in unfamiliar <span class=\"skill-mention\">Kotlin</span> and <span class=\"skill-mention\">Java</span> codebases.",
       "highlights": [
         "Led the JVM Chapter, connecting engineers across projects for knowledge sharing and technical alignment",
-        "Delivered client engagements as a consultant, including work at Kuehne+Nagel",
+        "Delivered client projects as a consultant, including work at Kuehne+Nagel",
         "Authored technical articles published on the iO Digital tech hub",
         "Contributed to raising engineering standards across the JVM community within iO"
       ],
-      "technologies": [
-        "Java",
-        "Kotlin",
-        "Spring Boot",
-        "OpenTelemetry",
-        "Kubernetes",
-        "GCP"
-      ]
-    },
-    {
-      "company": "Kuehne+Nagel",
-      "position": "Senior Software Engineer (via iO Digital)",
-      "startDate": "2024-08",
-      "endDate": "2026-06",
-      "featured": true,
-      "narrative": "At Kuehne+Nagel I designed and implemented <span class=\"skill-mention\">observability</span> architecture using <span class=\"skill-mention\">OpenTelemetry</span>, establishing metrics, alerting, and dashboards with <span class=\"skill-mention\">Grafana</span> and <span class=\"skill-mention\">Prometheus</span> that improved production resilience. I also led domain model redesign efforts, removing technical debt and aligning code with current business rules. I worked in a DevOps manner, taking ownership of deployments, monitoring, and production stability and I bring test-first practices and a habit of raising engineering quality across the team.",
-      "highlights": [
-        "Introduced AI-assisted coding, accelerating development work while safeguarding sensitive and customer data",
-        "Initiated technical quality meetup where it was the birthplace for multiple decision and architectural improvements",
-        "Introduced and implemented application monitoring, alerting and dashboard setup",
-        "Collaborated closely with DevOps engineer during GitLab migration, ensuring smooth transition and establishing clean separate repositories and pipelines"
-      ],
-      "technologies": [
-        "Kotlin",
-        "GCP",
-        "Kubernetes",
-        "Docker",
-        "PostgreSQL",
-        "Terraform",
-        "Axon"
+      "projectsLabel": "Client Projects",
+      "projects": [
+        {
+          "company": "Kuehne+Nagel",
+          "position": "Senior Software Engineer",
+          "startDate": "2024-08",
+          "endDate": "2026-06",
+          "narrative": "At Kuehne+Nagel I designed and implemented <span class=\"skill-mention\">observability</span> architecture using <span class=\"skill-mention\">OpenTelemetry</span>, establishing metrics, alerting, and dashboards with <span class=\"skill-mention\">Grafana</span> and <span class=\"skill-mention\">Prometheus</span> that improved production resilience. I also led domain model redesign efforts, removing technical debt and aligning code with current business rules. I worked in a DevOps manner, taking ownership of deployments, monitoring, and production stability and I bring test-first practices and a habit of raising engineering quality across the team.",
+          "highlights": [
+            "Introduced AI-assisted coding, accelerating development work while safeguarding sensitive and customer data",
+            "Initiated technical quality meetup where it was the birthplace for multiple decision and architectural improvements",
+            "Introduced and implemented application monitoring, alerting and dashboard setup",
+            "Collaborated closely with DevOps engineer during GitLab migration, ensuring smooth transition and establishing clean separate repositories and pipelines"
+          ]
+        }
       ]
     },
     {
@@ -153,25 +137,12 @@
       "position": "Senior Software Developer",
       "startDate": "2018-11",
       "endDate": "2024-03",
-      "featured": true,
       "narrative": "My time at Bol. gave me deep familiarity with high-availability systems operating at scale. Event-driven architectures using <span class=\"skill-mention\">Google Pub/Sub</span>. Containerized workloads on <span class=\"skill-mention\">Kubernetes</span>. CI/CD pipelines through <span class=\"skill-mention\">GitLab</span>. I was hands-on across backend and supporting interfaces in <span class=\"skill-mention\">Kotlin</span> and <span class=\"skill-mention\">Java</span>. As part of the Architecture Circle I reviewed service designs across domains and guided teams toward consistent patterns. I shaped the onboarding process and set the engineering bar for the team.",
       "highlights": [
         "Architecture design and implementation using Kotlin/Java",
         "Backend development with frontend work including configuration interfaces and service management pages",
         "Migrating legacy systems to modern, scalable architectures",
         "Leading the technical team and fostering good engineering practices"
-      ],
-      "technologies": [
-        "Java",
-        "Kotlin",
-        "Spring",
-        "GCP",
-        "Kubernetes",
-        "Google Pub/Sub",
-        "Docker",
-        "Gitlab CI/CD",
-        "PostgreSQL",
-        "Terraform"
       ]
     },
     {
@@ -182,6 +153,13 @@
     }
   ],
   "publications": [
+    {
+      "name": "Pragmatic Architecture: Finding Your Architectural Compass",
+      "description": "Why architecture should follow the needs of your system, not industry trends. And why this matters even more in the AI era.",
+      "link": "https://techhub.iodigital.com/articles/pragmatic-architecture-finding-your-architectural-compass",
+      "date": "2026-09-01",
+      "imageUrl": "https://techhub.iodigital.com/_next/image?url=/articles/pragmatic-architecture-finding-your-architectural-compass/banner.png&w=3840&q=75"
+    },
     {
       "name": "What AI Secretly Changed About My Engineering",
       "description": "After hundreds of hours of AI-assisted development, I expected to write less code. Instead, I changed how I plan, review, and reason about it.",

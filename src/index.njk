@@ -249,6 +249,22 @@
           </div>
           <div class="timeline-company">{{ job.company }}</div>
           <p class="timeline-desc">{{ job.narrative | safe }}</p>
+
+          {% if job.projects %}
+            <div class="timeline-sub-projects">
+              <div class="timeline-sub-projects-label">{{ job.projectsLabel | default("Client Projects") }}</div>
+              {% for proj in job.projects %}
+                <div class="timeline-sub-project">
+                  <div class="timeline-sub-header">
+                    <span class="timeline-sub-role">{{ proj.position }}</span>
+                    <span class="timeline-sub-date">{{ proj.startDate | fmtDate }} — {% if proj.endDate %}{{ proj.endDate | fmtDate }}{% else %}Present{% endif %}</span>
+                  </div>
+                  <div class="timeline-sub-company">{{ proj.company }}</div>
+                  <p class="timeline-sub-desc">{{ proj.narrative | safe }}</p>
+                </div>
+              {% endfor %}
+            </div>
+          {% endif %}
         </div>
       </div>
       {% endif %}

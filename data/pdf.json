@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-07-09T01:58:37Z"
+    "lastUpdated": "2026-08-31T18:20:00Z"
   },
   "basics": {
     "name": "Mohamed Elmedany",
@@ -13,8 +13,12 @@
     },
     "profiles": [
       {
+        "network": "Portfolio",
+        "url": "https://mohamedelmedany.dev"
+      },
+      {
         "network": "LinkedIn",
-        "url": "https://www.linkedin.com/in/melmedany/"
+        "url": "https://www.linkedin.com/in/melmedany"
       },
       {
         "network": "GitHub",
@@ -112,8 +116,7 @@
       "position": "Senior Software Engineer / JVM Chapter Lead",
       "startDate": "2024-08",
       "endDate": null,
-      "featured": true,
-      "summary": "Working as a consultant engineer across client engagements while leading the JVM Chapter, a role built to connect engineers across projects, drive technical alignment, and raise the collective bar. I authored technical articles on the iO tech hub and helped define what good engineering looks like inside the company. The consulting model sharpened my ability to onboard fast, earn trust quickly, and deliver in unfamiliar Kotlin and Java codebases.",
+      "summary": "Working as a consultant engineer across client projects while leading the JVM Chapter, a role built to connect engineers across projects, drive technical alignment, and raise the collective bar. I authored technical articles on the iO tech hub and helped define what good engineering looks like inside the company. The consulting model sharpened my ability to onboard fast, earn trust quickly, and deliver in unfamiliar Kotlin and Java codebases.",
       "highlights": [
         "Led the JVM Chapter, connecting engineers across campuses and projects around shared Kotlin/Java standards",
         "Delivered transformational observability, domain redesign and technical excellence work at Kuehne+Nagel",
@@ -126,32 +129,34 @@
         "OpenTelemetry",
         "Kubernetes",
         "GCP"
-      ]
-    },
-    {
-      "company": "Kuehne+Nagel",
-      "position": "Senior Software Engineer (via iO Digital)",
-      "startDate": "2024-08",
-      "endDate": "2026-06",
-      "featured": true,
-      "summary": "Designed and implemented observability architecture using OpenTelemetry, making production behavior visible through business-relevant metrics and KPIs. Led domain model redesign efforts, removing years of technical debt and aligning code with how the business actually works. Brought test-first practices and a habit of quietly raising the bar across the team. Introduced AI-assisted development into the workflow while safeguarding sensitive data and customer information. Work in a DevOps manner, taking ownership of deployments, monitoring, and production stability.",
-      "highlights": [
-        "AI-assisted coding: Accelerated development while maintaining strict data governance for sensitive data",
-        "Observability stack: Designed application-level monitoring with Prometheus and GCP Alert Policies, establishing SLO-based alerting across microservices",
-        "Domain modernization: Led DDD-based model redesign, extracting core logic and establishing bounded contexts from a scattered monorepo while enforcing hexagonal architecture boundaries",
-        "Technical culture: Initiated quality meetup that became the birthplace for cross-team architectural standards adopted platform-wide",
-        "Platform operations: Collaborated with DevOps on GitLab migration, establishing clean repository structure and CI/CD pipelines for multiple services"
       ],
-      "technologies": [
-        "Kotlin",
-        "GCP",
-        "Kubernetes",
-        "Docker",
-        "PostgreSQL",
-        "Terraform",
-        "OpenTelemetry",
-        "Prometheus",
-        "Axon"
+      "projectsLabel": "Client Projects",
+      "projects": [
+        {
+          "company": "Kuehne+Nagel",
+          "position": "Senior Software Engineer",
+          "startDate": "2024-08",
+          "endDate": "2026-06",
+          "summary": "Designed and implemented observability architecture using OpenTelemetry, making production behavior visible through business-relevant metrics and KPIs. Led domain model redesign efforts, removing years of technical debt and aligning code with how the business actually works. Brought test-first practices and a habit of quietly raising the bar across the team. Introduced AI-assisted development into the workflow while safeguarding sensitive data and customer information. Work in a DevOps manner, taking ownership of deployments, monitoring, and production stability.",
+          "highlights": [
+            "AI-assisted coding: Accelerated development while maintaining strict data governance for sensitive data",
+            "Observability stack: Designed application-level monitoring with Prometheus and GCP Alert Policies, establishing SLO-based alerting across microservices",
+            "Domain modernization: Led DDD-based model redesign, extracting core logic and establishing bounded contexts from a scattered monorepo while enforcing hexagonal architecture boundaries",
+            "Technical culture: Initiated quality meetup that became the birthplace for cross-team architectural standards adopted platform-wide",
+            "Platform operations: Collaborated with DevOps on GitLab migration, establishing clean repository structure and CI/CD pipelines for multiple services"
+          ],
+          "technologies": [
+            "Kotlin",
+            "GCP",
+            "Kubernetes",
+            "Docker",
+            "PostgreSQL",
+            "Terraform",
+            "OpenTelemetry",
+            "Prometheus",
+            "Axon"
+          ]
+        }
       ]
     },
     {
@@ -159,7 +164,6 @@
       "position": "Senior Software Developer",
       "startDate": "2018-11",
       "endDate": "2024-03",
-      "featured": true,
       "summary": "Deep experience building and maintaining high-availability systems at scale. Worked with event-driven architectures using Google Pub/Sub, containerized workloads on Kubernetes, and CI/CD pipelines through GitLab. Hands-on across backend and supporting interfaces in Kotlin and Java. As part of the Architecture Circle I reviewed service designs across domains and guided teams toward consistent patterns. I shaped onboarding process and set the engineering bar for the team.",
       "highlights": [
         "Designed and implemented event-driven architecture using Google Pub/Sub, handling concurrent user chats with low latency at scale",
@@ -279,6 +283,11 @@
     }
   ],
   "publications": [
+    {
+      "name": "Pragmatic Architecture: Finding Your Architectural Compass",
+      "link": "https://techhub.iodigital.com/articles/pragmatic-architecture-finding-your-architectural-compass",
+      "date": "2026-09-01"
+    },
     {
       "name": "What AI Secretly Changed About My Engineering",
       "link": "https://techhub.iodigital.com/articles/what-ai-secretly-changed-about-my-engineering",

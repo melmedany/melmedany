@@ -623,6 +623,81 @@ section {
   max-width: 780px;
 }
 
+/* ── Timeline sub-projects ─────────────────────────────────────────────── */
+.timeline-sub-projects {
+  margin-top: 1.5rem;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1.25rem 1.25rem 1.25rem 1.5rem;
+}
+
+.timeline-sub-projects-label {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+.timeline-sub-project {
+  position: relative;
+  padding-left: 1.1rem;
+}
+.timeline-sub-project + .timeline-sub-project {
+  margin-top: 1.25rem;
+  padding-top: 1.25rem;
+  border-top: 1px dashed var(--border);
+}
+.timeline-sub-project::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.45rem;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.timeline-sub-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.15rem;
+}
+
+.timeline-sub-role {
+  font-weight: 600;
+  font-size: 0.9375rem;
+  color: var(--text-primary);
+}
+
+.timeline-sub-date {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.timeline-sub-company {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+}
+
+.timeline-sub-desc {
+  color: var(--text-secondary);
+  font-size: 0.9375rem;
+  line-height: 1.7;
+  max-width: 780px;
+}
+
 /* ── Timeline chapter marker ───────────────────────────────────────────── */
 .timeline-chapter-marker {
   position: relative;
@@ -670,7 +745,6 @@ section {
   color: var(--text-muted);
   font-style: italic;
 }
-
 
 /* ── 10. Background ────────────────────────────────────────────────────── */
 .story-narrative {
